@@ -5,7 +5,8 @@
      header('Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With');
      class Cross{
         
-        public static function validar($header){
+        public static function validar(){
+            $header = getallheaders();
             if(!isset($header['Authorization']) || $header['Authorization'] !== 'A234'){
                 $respuesta = 'No autorizado';
                 return $respuesta;

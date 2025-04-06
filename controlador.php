@@ -1,8 +1,6 @@
 <?php
    require_once 'cross.php'; //enlace 
-   $header = getallheaders();
-   //echo json_encode($header);
-   $respuesta = Cross::validar($header);
+   $respuesta = Cross::validar();
    // $respuesta = array('status' => 'Autorizado');
    echo json_encode($respuesta);
    /* if($respuesta['status'] == 'No autorizado'){
