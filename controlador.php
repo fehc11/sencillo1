@@ -1,5 +1,5 @@
 <?php
-   require_once 'cross.php';
+   require_once 'cross.php'; //enlace 
    $header = getallheaders();
    //echo json_encode($header);
    $respuesta = Cross::validar($header);
