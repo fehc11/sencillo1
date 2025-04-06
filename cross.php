@@ -6,7 +6,7 @@
      class Cross{
         
         public static function validar(){
-            $header = getallheaders();
+            $header = getallheaders();//segundo cambio
             if(!isset($header['Authorization']) || $header['Authorization'] !== 'A234'){
                 $respuesta = 'No autorizado';
                 return $respuesta;
